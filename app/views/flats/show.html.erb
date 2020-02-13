@@ -1,0 +1,14 @@
+<div class="container d-flex flex-column w-100">
+  <div class="flex-item bg-light">
+    <h1><%= @flat.name %></h1>
+    <h4><%= @flat.address %></h4>
+  </div>
+  <div>
+    <h2>A bit more about this flat...</h2>
+    <p><%= @flat.description %></p>
+  </div>
+  <div>
+    <h2>Details</h2>
+    <span><i class="fas fa-users"></i><%= @flat.number_of_guests %></span><span><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></span>
+  </div>
+</div>

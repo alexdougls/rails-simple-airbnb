@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <div class="navbar navbar-lewagon mb-4">
+      <%= link_to 'Simple Airbnb', flats_path %>
+      <div>
+        <input type="text" placeholder="Search">
+        <%= link_to 'Add Flat', new_flat_path, class: 'btn btn-primary' %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
